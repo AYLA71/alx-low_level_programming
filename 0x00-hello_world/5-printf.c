@@ -1,11 +1,10 @@
-#include<stdio.h>
+#include <stdio.h>
 
-/*
- * main - this main fonction
+/**
+ * main - this is tje main fonction
  *
  * Return: 0 when successful
  */
-
 int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
