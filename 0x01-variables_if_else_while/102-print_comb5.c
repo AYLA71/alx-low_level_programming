@@ -1,22 +1,30 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
-/**
- * main - program that prints numbers from 0 to 99.
- * Return: 0
- */
 
+/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-int c = 0;
-while (c <= 99)
+int a, b;
+for (a = 0; a <= 98; a++)
 {
-putchar(c / 10 + '0');
-putchar(c % 10 + '0');
-if (c != 99)
+for (b = a + 1; b <= 99; b++)
 {
-putchar(','); 
+putchar((a / 10) + '0');
+putchar((a % 10) + '0');
+putchar(' ');
+putchar((b / 10) + '0');
+putchar((b % 10) + '0');
+if (a == 98 && b == 99)
+continue;
+putchar(',');
 putchar(' ');
 }
-c++;
 }
 putchar('\n');
 return (0);
