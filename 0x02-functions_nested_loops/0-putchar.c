@@ -1,6 +1,6 @@
-#include<stdio.h>
+#include <main.h>
 /**
- *main - this is main fonction
+ * main - this is main fonction
  *
  *Return: 0 always
  */
